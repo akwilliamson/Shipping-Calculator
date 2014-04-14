@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Shipping</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shipping Cost Calculator</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Package</h2>
+          <form id="shipping-costs">
+            <div class="form-group">
+              <label for="weight">Enter the weight in lbs</label>
+              <input type="text" class="form-control" id="weight">
+            </div>
+            <div class="form-group">
+              <label for="height">Enter height in inches</label>
+              <input type="text" class="form-control" id="height">
+            </div>
+            <div class="form-group">
+              <label for="width">Enter width in inches</label>
+              <input type="text" class="form-control" id="width">
+            </div>
+            <div class="form-group">
+              <label for="depth">Enter depth in inches</label>
+              <input type="text" class="form-control" id="depth">
+            </div>
+            <div class="form-group">
+              <label for="speed">Choose a shipping method</label>
+              <select name="speed">
+                <option value="standard">Standard</option>
+                <option value="priority">Priority</option>
+                <option value="express">Express</option>
+              </select>  
+            </div>
+            <div class="form-group">
+              <label for="shipFrom">Enter shipping state</label>
+              <input type="text" class="form-control" id="shipFrom">
+            </div>
+            <div class="form-group">
+              <label for="shipTo">Enter recipient state</label>
+              <input type="text" class="form-control" id="shipTo">
+            </div>
+            <div class="form-group">
+              <input type="checkbox" name="insurance" value="insurance">Check if insuring package</input>
+            </div>
+            <button type="submit" class="btn">Add</button>
+          </form>
+          <h3 class="show-result">Your total cost is: $<span class="totalCost"></span></h3>
+        </div>
+
+<!--         <div class="col-md-6">    
+          <h3>Equilateral triangles</h3>
+          <ul id="equilateral">
+
+          </ul>  
+        </div> -->
+  
+      </div>
+    </div>
+  </body>
+</html>
